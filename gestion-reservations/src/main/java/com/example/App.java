@@ -1,4 +1,3 @@
-
 package com.example;
 
 import com.example.model.*;
@@ -19,13 +18,13 @@ public class App {
 
             // 1. Créer un utilisateur
             Utilisateur user = new Utilisateur();
-            user.setNom("Alice Dupont");
-            user.setEmail("alice@example.com");
+            user.setNom("Sara El Amrani");
+            user.setEmail("sara.elamrani@example.com");
 
             // 2. Créer une salle
             Salle salle = new Salle();
-            salle.setNom("Salle A");
-            salle.setCapacite(20);
+            salle.setNom("Salle Atlas");
+            salle.setCapacite(45);
 
             em.persist(salle);
 
@@ -39,8 +38,8 @@ public class App {
 
             Reservation r = new Reservation();
 
-            r.setDateDebut(LocalDate.of(2026, 10, 12));
-            r.setDateFin(LocalDate.of(2026, 10, 15));
+            r.setDateDebut(LocalDate.of(2026, 12, 2));
+            r.setDateFin(LocalDate.of(2026, 12, 6));
 
             System.out.println(r.datesValides());
             // 4. Enregistrer l'utilisateur et sa réservation
